@@ -12,7 +12,9 @@ The application is contained in the main.js file. The majority of the applcation
 Click the number for it to move to the next empty space. Your goal is to put the numbers in the right sequence (top to bottom, left to right) from 1 to 8
 
 Start of Game:
-![Alt text](https://github.com/AllanGrayIT/StudentChallenge1/favicon.png?raw=true "Optional Title")
+
+![ScreenShot](https://github.com/AllanGrayIT/StudentChallenge1/favicon.png")
 
 End of Game:
-![Alt text](https://github.com/AllanGrayIT/StudentChallenge1/screenshot.png?raw=true "Optional Title")
+
+![ScreenShot](https://github.com/AllanGrayIT/StudentChallenge1/screenshot.pnge")
