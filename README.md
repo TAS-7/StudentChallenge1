@@ -7,9 +7,6 @@ The purpose of this little game is to put the numbers that are displayed, in the
 
 The application is contained in the main.js file. The majority of the applcation is there, the missing pieces jsut need to be completed.
 
-See screenshot for example of how this should look
-
-
 # How to play
 
 Click the number for it to move to the next empty space. Your goal is to put the numbers in the right sequence (top to bottom, left to right) from 1 to 8
