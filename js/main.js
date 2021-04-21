@@ -97,7 +97,9 @@ const findEmptyPos = () => {
 }
 
 const checkInvalid = (x, y, i, j) => 
-    //Please update this function - insert code here to check if a move is invalid
+//    
+//Please update this function - insert code here to check if a move is invalid
+//
 
 const getNeighbour = pos => {
     let n = []
@@ -146,7 +148,9 @@ const tradePos = (pos, newPos) => {
 }
 
 const checkGameWin = () => {
+ //
  //Please update this function - insert code here to check if a game is won at the end of a move
+ //
 }
 
 const move = e => {
