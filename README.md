@@ -15,8 +15,8 @@ Click the number for it to move to the next empty space. Your goal is to put the
 
 # Start of Game:
 
-![image](https://user-images.githubusercontent.com/AllanGrayIT/StudentChallenge1/favicon.png)
+![image](https://github.com/AllanGrayIT/StudentChallenge1/favicon.png)
 
 # End of Game:
 
-![image](https://user-images.githubusercontent.com/AllanGrayIT/StudentChallenge1/screenshot.png)
+![image](https://github.com/AllanGrayIT/StudentChallenge1/screenshot.png)
