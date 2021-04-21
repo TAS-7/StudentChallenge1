@@ -13,8 +13,8 @@ Click the number for it to move to the next empty space. Your goal is to put the
 
 Start of Game:
 
-![ScreenShot](https://github.com/AllanGrayIT/StudentChallenge1/favicon.png")
+![ScreenShot](https://raw.githubusercontent.com/AllanGrayIT/StudentChallenge1/favicon.png")
 
 End of Game:
 
-![ScreenShot](https://github.com/AllanGrayIT/StudentChallenge1/screenshot.pnge")
+![ScreenShot](https://raw.githubusercontent.com/AllanGrayIT/StudentChallenge1/screenshot.png")
