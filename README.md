@@ -10,3 +10,9 @@ The application is contained in the main.js file. The majority of the applcation
 # How to play
 
 Click the number for it to move to the next empty space. Your goal is to put the numbers in the right sequence (top to bottom, left to right) from 1 to 8
+
+Start of Game:
+![Alt text](/relative/path/to/image.jpg?raw=true "Optional Title")
+
+End of Game:
+![Alt text](/relative/path/to/image.jpg?raw=true "Optional Title")
