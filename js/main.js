@@ -1,6 +1,7 @@
-let canvas, c, w, h, scale, game, tileSize, moves, status
-
 //initialize variables
+let canvas, c, w, h, scale, game, tileSize, moves, status 
+
+//initialize the game board
 const init = () => {
     moves = 0
     tileSize = 96
@@ -18,7 +19,7 @@ const init = () => {
         opt.innerText = i
         cubeSize.appendChild(opt)
     }
-    cubeSize.addEventListener('change', function(){
+    cubeSize.addEventListener('change', function(){ //listens for a response from the player
         const value = parseInt(this.value)
         tileSize = 96 - (value-3) * 16
         createGame(value)
@@ -63,7 +64,7 @@ const createGame = num => {
     }
 }
 
-const getPos = e => {return {x: Math.floor(e.offsetX / tileSize), y: Math.floor(e.offsetY / tileSize)}}
+const getPos = e => {return {x: Math.floor(e.offsetX / tileSize), y: Math.floor(e.offsetY / tileSize)}} //gets the existing position of the tiles following a move
 
 //draw the tiles on the screen
 const draw = () => {
@@ -97,11 +98,13 @@ const findEmptyPos = () => {
 }
 
 const checkInvalid = (x, y, i, j) => 
-//    
+//
+//
 //Please update this function - insert code here to check if a move is invalid
 //
+//
 
-const getNeighbour = pos => {
+const getNeighbour = pos => { //recalculates the new numbers that will be adjacent in a new game 
     let n = []
     for(let i = -1; i < 2; i++){
         for(let j = -1; j < 2; j++){
@@ -114,7 +117,7 @@ const getNeighbour = pos => {
     return n
 }
 
-const scramble = (num = 1) => {
+const scramble = (num = 1) => { //scrambles the numbers to start a new game
     moves = 0
     for(let i = 0; i < num; i++){
         const emptyPos = findEmptyPos()
@@ -128,7 +131,7 @@ const scramble = (num = 1) => {
     }
 }
 
-const lookEmptyPos = pos => {
+const lookEmptyPos = pos => {   
     for(let i = -1; i < 2; i++){
         for(let j = -1; j < 2; j++){
             if(checkInvalid(pos.x, pos.y, i, j))
@@ -140,7 +143,7 @@ const lookEmptyPos = pos => {
     return null
 }
 
-const tradePos = (pos, newPos) => {
+const tradePos = (pos, newPos) => {  //handles the trading of tiles in a move
     if(!newPos) 
         return
     game[newPos.y][newPos.x] = game[pos.y][pos.x]
@@ -149,11 +152,13 @@ const tradePos = (pos, newPos) => {
 
 const checkGameWin = () => {
  //
+ //
  //Please update this function - insert code here to check if a game is won at the end of a move
+ //
  //
 }
 
-const move = e => {
+const move = e => { //handles the movement of an actual tile.
     const pos = getPos(e)
     const newPos = lookEmptyPos(pos)
     tradePos(pos, newPos)
