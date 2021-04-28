@@ -6,7 +6,7 @@ To participate, fork the current repo to your own GitHub account where you can t
 
 If you believe you have solved the problem, please email us with a link to your cloned repo at itrecruitment@allangray.co.za
 
-The first student to send through the correct answer will win a R500 Takealot voucher. The repo will be up from April 28th 2021, where you will have until the 5th May 2021 to complete the challenge. The winner will only be announced after the challenge has been closed. 
+The first student to send through the correct answer will win a R500 Takealot voucher. The repo will be up from April 30th 2021, where you will have until the 7th May 2021 to complete the challenge. The winner will only be announced after the challenge has been closed. 
 
 # Eligibility
  - Currently live in South Africa
