@@ -164,20 +164,20 @@ const checkGameWin = () => {
     var curr = 1;
     for(var i =0; i<game.length; i++){
         for(var j=0; j<game.length; j++){
-            if(game[i][j] !=  curr && i != game.length - 1 && j != game.length - 1){ 
+            if(game[i][j] != curr && (i != game.length - 1 && j != game.length - 1)){ 
                 win = false
                 break
             }
-            if(game[i][j] !=  0 && i == game.length - 1 && j == game.length - 1){ 
+            if(game[i][j] != 0 && i == game.length - 1 && j == game.length - 1){ 
                 win = false
                 break
             }
             curr += 1
         }
-        if (!win)
+        if (win == false)
             break
     }
-    if (win)
+    if (win == true)
         return true
 
     else
