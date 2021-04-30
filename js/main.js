@@ -62,6 +62,7 @@ const createGame = num => {
             game[i][j] = (i * num + j + 1) % (num*num)
         }
     }
+    console.log(game);
 }
 
 const getPos = e => {return {x: Math.floor(e.offsetX / tileSize), y: Math.floor(e.offsetY / tileSize)};} //gets the existing position of the tiles following a move
@@ -161,34 +162,18 @@ const tradePos = (pos, newPos) => {  //handles the trading of tiles in a move
 
 const checkGameWin = () => {
     var win = true;
-    var curr = 1;
+    var counter = 0;
     for(var i =0; i<game.length; i++){
         for(var j=0; j<game.length; j++){
-            if(game[i][j] != curr && (i != game.length - 1 && j != game.length - 1)){ 
-                win = false
-                break
+            counter  +=1;
+            if(game[i][j] !=counter){
+                if(!game[i][j])
+                    continue
+                return false;
             }
-            if(game[i][j] != 0 && i == game.length - 1 && j == game.length - 1){ 
-                win = false
-                break
-            }
-            curr += 1
         }
-        if (win == false)
-            break
     }
-    if (win == true)
-        return true
-
-    else
-        return false
-    
-
- //
- //
- //Please update this function - insert code here to check if a game is won at the end of a move
- //
- //
+        return win
 }
 
 const move = e => { //handles the movement of an actual tile.
