@@ -62,7 +62,6 @@ const createGame = num => {
             game[i][j] = (i * num + j + 1) % (num*num)
         }
     }
-    console.log(game);
 }
 
 const getPos = e => {return {x: Math.floor(e.offsetX / tileSize), y: Math.floor(e.offsetY / tileSize)};} //gets the existing position of the tiles following a move
@@ -146,7 +145,7 @@ const lookEmptyPos = pos => {
         for(let j = -1; j < 2; j++){
             if(checkInvalid(pos.x, pos.y, i, j))
                 continue
-            if(game[pos.y+i][pos.x+j]==0)
+            if(!game[pos.y+i][pos.x+j])
                 return {x: pos.x+j, y: pos.y+i};
         }
     }
